@@ -1,0 +1,148 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "training": "Training",
+    "seminars": "Seminare",
+    "blog": "Blog",
+    "videos": "Videos",
+    "booking": "Buchen",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Buko Combat School",
+    "subtitle": "Effektive Selbstverteidigung mit Vladimir Buko",
+    "cta": "Training buchen",
+    "learnMore": "Mehr erfahren",
+    "vladimirBuko": {
+      "alt": "Vladimir Buko",
+      "title": "Vladimir Buko",
+      "description": "Vladimir Buko ist ein erfahrener Kampfkunstlehrer mit mehr als 20 Jahren Erfahrung. Er hat seinen eigenen Stil entwickelt, der verschiedene Kampftechniken kombiniert und auf effektive Selbstverteidigung im Alltag ausgerichtet ist.",
+      "linkText": "Mehr über Vladimir erfahren"
+    },
+    "trainingOptions": {
+      "title": "Trainingsangebote",
+      "learnMore": "Mehr erfahren"
+    },
+    "blogPosts": {
+      "title": "Aktuelle Blog-Beiträge",
+      "readMore": "Weiterlesen",
+      "allPosts": "Alle Blog-Beiträge"
+    },
+    "videos": {
+      "title": "Video Highlights",
+      "moreVideos": "Mehr Videos",
+      "viewAll": "Alle Videos ansehen"
+    }
+  },
+  "training": {
+    "location": {
+      "title": "Trainingsort",
+      "name": "Punch Fitness Essen GmbH",
+      "address": "Leimkugelstrasse 9, 45141 Essen",
+      "website": "www.punch-fitness.de"
+    },
+    "schedule": {
+      "title": "Trainingszeiten",
+      "monday": "Montag, 20:30 Uhr",
+      "wednesday": "Mittwoch, 20:30 Uhr",
+      "friday": "Freitag, 20:00 Uhr",
+      "sunday": "Sonntag, 15:30 Uhr"
+    },
+    "disciplines": {
+      "title": "Kampfstile",
+      "boxing": "Boxen",
+      "kickboxing": "Kickboxen",
+      "sambo": "Sambo",
+      "weapons": "Bewaffneter Kampf"
+    },
+    "group": {
+      "title": "Gruppentraining",
+      "description": "Teilnahme am regulären Gruppentraining bei Punch Fitness in Essen. Für Anfänger und Fortgeschrittene."
+    },
+    "private": {
+      "title": "Privattraining",
+      "description": "Individuelles Training mit Vladimir Buko in den Räumen von Punch Fitness oder in voll ausgestatteten privaten Trainingsräumen."
+    },
+    "seminars": {
+      "title": "Seminare",
+      "description": "Vladimir ist buchbar für Seminare bei Polizei, Militär und anderen öffentlichen Einrichtungen sowie für Firmenveranstaltungen."
+    }
+  },
+  "footer": {
+    "rights": "© {year} Buko Combat School. Alle Rechte vorbehalten.",
+    "subscribe": "Abonnieren"
+  },
+  "about": {
+    "title": "Über Vladimir Buko",
+    "bioImage": "Vladimir Buko",
+    "bioTitle": "Über mich",
+    "bioParagraph1": "Ich bin Vladimir Buko, ein Kampfkunstmeister mit über 20 Jahren Erfahrung in verschiedenen Kampfstilen. Meine Reise begann in meiner Jugend und hat mich zu einem lebenslangen Schüler und Lehrer der Kampfkunst gemacht.",
+    "bioParagraph2": "Nach jahrelangem Training und Wettbewerb habe ich meine eigene Methode entwickelt, die Technik, Strategie und praktische Anwendbarkeit kombiniert. Mein Ziel ist es, mein Wissen weiterzugeben und Menschen zu helfen, Selbstvertrauen, Fitness und effektive Selbstverteidigungsfähigkeiten zu entwickeln.",
+    "bioParagraph3": "Heute unterrichte ich bei Punch Fitness in Essen und biete verschiedene Trainingsmöglichkeiten an, vom Gruppentraining bis hin zu spezialisierten Seminaren für Organisationen wie Polizei und Militär.",
+    "achievementsTitle": "Errungenschaften",
+    "achievement1Number": "15+",
+    "achievement1Title": "Internationale Titel",
+    "achievement1Description": "Mehrere Titel in verschiedenen Kampfsportarten auf internationaler Ebene.",
+    "achievement2Number": "500+",
+    "achievement2Title": "Ausgebildete Schüler",
+    "achievement2Description": "Über 500 Schüler in verschiedenen Kampftechniken ausgebildet.",
+    "achievement3Number": "30+",
+    "achievement3Title": "Seminare geleitet",
+    "achievement3Description": "Internationale Seminare für Polizei, Militär und zivile Organisationen."
+  },
+  "trainingPage": {
+    "title": "Training",
+    "subtitle": "Entdecken Sie unsere verschiedenen Trainingsangebote und finden Sie das passende für Ihre Ziele.",
+    "optionsTitle": "Trainingsmöglichkeiten",
+    "groupDescription": "Unser reguläres Gruppentraining bei Punch Fitness in Essen bietet eine dynamische und unterstützende Umgebung, um Kampfkünste zu erlernen und zu praktizieren.",
+    "groupBenefit1": "Training in einer motivierenden Gruppenatmosphäre",
+    "groupBenefit2": "Regelmäßige Trainingszeiten für eine konsistente Praxis",
+    "groupBenefit3": "Kostengünstiger Einstieg in die Welt der Kampfkunst",
+    "privateDescription": "Privattraining mit Vladimir Buko bietet personalisierte Aufmerksamkeit und maßgeschneiderte Übungen, die auf Ihre spezifischen Ziele und Fähigkeiten zugeschnitten sind.",
+    "privateBenefit1": "Individuell angepasstes Training für optimale Ergebnisse",
+    "privateBenefit2": "Flexible Terminplanung nach Ihren Bedürfnissen",
+    "privateBenefit3": "Intensives Training in voll ausgestatteten Trainingsräumen",
+    "seminarsDescription": "Vladimir Buko ist für spezialisierte Seminare für Organisationen wie Polizei, Militär und andere öffentliche oder private Einrichtungen verfügbar.",
+    "seminarsBenefit1": "Maßgeschneiderte Programme für die spezifischen Anforderungen Ihrer Organisation",
+    "seminarsBenefit2": "Intensive Workshops zu spezialisierten Selbstverteidigungstechniken",
+    "seminarsBenefit3": "Team-Building durch gemeinsames Training und Herausforderungen",
+    "learnMore": "Mehr erfahren"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Lesen Sie unsere neuesten Artikel über Kampfkunst, Selbstverteidigung und Training.",
+    "readMore": "Weiterlesen",
+    "backToBlog": "Zurück zum Blog",
+    "featuredImage": "Artikelbild",
+    "authorBio": "Vladimir Buko ist ein erfahrener Kampfkunstmeister und Gründer der Buko Combat School. Mit über 20 Jahren Erfahrung teilt er sein Wissen über Kampfkunst und Selbstverteidigung.",
+    "recommendedPosts": "Empfohlene Artikel",
+    "morePosts": "Entdecken Sie weitere Artikel in unserem Blog",
+    "viewAllPosts": "Alle Artikel ansehen"
+  },
+  "videos": {
+    "title": "Videos",
+    "subtitle": "Sehen Sie unsere neuesten Trainingsvideos, Demonstrationen und Interviews.",
+    "youtubeChannel": "Besuchen Sie unseren YouTube-Kanal",
+    "youtubeDescription": "Abonnieren Sie unseren YouTube-Kanal für regelmäßige Updates, Trainingstipps und Einblicke in die Welt des Buko Combat.",
+    "subscribeButton": "Jetzt abonnieren"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Haben Sie Fragen? Kontaktieren Sie uns und wir helfen Ihnen gerne weiter.",
+    "contactInfo": "Kontaktinformationen",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "contactForm": "Kontaktformular",
+    "name": "Name",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "Ihre E-Mail-Adresse",
+    "subject": "Betreff",
+    "subjectPlaceholder": "Betreff Ihrer Nachricht",
+    "message": "Nachricht",
+    "messagePlaceholder": "Ihre Nachricht...",
+    "sendButton": "Nachricht senden",
+    "findUs": "So finden Sie uns"
+  }
+}

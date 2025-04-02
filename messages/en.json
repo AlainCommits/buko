@@ -1,0 +1,76 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "training": "Training",
+    "seminars": "Seminars",
+    "blog": "Blog",
+    "videos": "Videos",
+    "booking": "Booking",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Buko Combat School",
+    "subtitle": "Effective Self-Defense with Vladimir Buko",
+    "cta": "Book Training",
+    "learnMore": "Learn More",
+    "vladimirBuko": {
+      "alt": "Vladimir Buko",
+      "title": "Vladimir Buko",
+      "description": "Vladimir Buko is an experienced martial arts instructor with more than 20 years of experience. He has developed his own style, combining various combat techniques focused on effective self-defense in everyday life.",
+      "linkText": "Learn more about Vladimir"
+    },
+    "trainingOptions": {
+      "title": "Training Options",
+      "learnMore": "Learn More"
+    },
+    "blogPosts": {
+      "title": "Latest Blog Posts",
+      "readMore": "Read More",
+      "allPosts": "All Blog Posts"
+    },
+    "videos": {
+      "title": "Video Highlights",
+      "moreVideos": "More Videos",
+      "viewAll": "View All Videos"
+    }
+  },
+  "training": {
+    "location": {
+      "title": "Training Location",
+      "name": "Punch Fitness Essen GmbH",
+      "address": "Leimkugelstrasse 9, 45141 Essen",
+      "website": "www.punch-fitness.de"
+    },
+    "schedule": {
+      "title": "Training Schedule",
+      "monday": "Monday, 8:30 PM",
+      "wednesday": "Wednesday, 8:30 PM",
+      "friday": "Friday, 8:00 PM",
+      "sunday": "Sunday, 3:30 PM"
+    },
+    "disciplines": {
+      "title": "Combat Styles",
+      "boxing": "Boxing",
+      "kickboxing": "Kickboxing",
+      "sambo": "Sambo",
+      "weapons": "Weapons Combat"
+    },
+    "group": {
+      "title": "Group Training",
+      "description": "Join regular group training sessions at Punch Fitness in Essen. For beginners and advanced students."
+    },
+    "private": {
+      "title": "Private Training",
+      "description": "Individual training with Vladimir Buko at Punch Fitness facilities or in fully equipped private training spaces."
+    },
+    "seminars": {
+      "title": "Seminars",
+      "description": "Vladimir is available for seminars at police departments, military facilities, other public institutions, and corporate events."
+    }
+  },
+  "footer": {
+    "rights": "© {year} Buko Combat School. All rights reserved.",
+    "subscribe": "Subscribe"
+  }
+}
