@@ -50,7 +50,10 @@ export default function FeaturedVideos() {
                   </div>
                   <span className="text-sm text-gray-300">{activeVideo.duration}</span>
                 </div>
-                <h3 className="text-2xl font-bebas text-white">
+                <h3 
+                  className="text-2xl text-white"
+                  style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+                >
                   {activeVideo.title}
                 </h3>
               </div>
@@ -59,7 +62,12 @@ export default function FeaturedVideos() {
           
           <div>
             <div className="bg-combat-black p-6 rounded-sm h-full">
-              <h3 className="font-bebas text-2xl mb-6 text-white">{t('videos.moreVideos')}</h3>
+              <h3 
+                className="text-2xl mb-6 text-white"
+                style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+              >
+                {t('videos.moreVideos')}
+              </h3>
               
               <div className="space-y-4">
                 {videos.map((video) => (

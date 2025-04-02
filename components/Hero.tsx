@@ -8,7 +8,7 @@ export default function Hero() {
   const t = useTranslations('home')
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-combat-black">
+    <section className="relative min-h-[90vh] flex items-center overflow-hidden" style={{ backgroundColor: 'var(--color-combat-black)' }}>
       {/* Background Image mit Overlay-Effekt */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -20,8 +20,18 @@ export default function Hero() {
           sizes="100vw"
         />
         <div className="absolute inset-0 bg-black opacity-60"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-combat-black to-transparent"></div>
-        <div className="absolute inset-0 flex items-center justify-center text-combat-red text-opacity-20 text-[20rem] font-impact font-bold tracking-wider -rotate-12 opacity-30">
+        <div className="absolute inset-0 bg-gradient-to-t" style={{ 
+          backgroundImage: `linear-gradient(to top, var(--color-combat-black), transparent)` 
+        }}></div>
+        <div 
+          className="absolute inset-0 flex items-center justify-center text-opacity-20 text-[20rem] -rotate-12 opacity-30"
+          style={{ 
+            fontFamily: "'Anton', Impact, sans-serif", 
+            letterSpacing: "0.05em", 
+            fontWeight: "bold",
+            color: 'var(--color-combat-red)'
+          }}
+        >
           BUKO
         </div>
       </div>
@@ -29,11 +39,14 @@ export default function Hero() {
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl mb-6 font-impact tracking-wider">
+          <h1 
+            className="text-6xl md:text-8xl mb-6"
+            style={{ letterSpacing: "0.08em" }}
+          >
             <span className="gradient-text">BUKO</span> COMBAT SCHOOL
           </h1>
           
-          <div className="w-40 h-1 bg-combat-red mx-auto mb-10"></div>
+          <div className="w-40 h-1 mx-auto mb-10" style={{ backgroundColor: 'var(--color-combat-red)' }}></div>
           
           <p className="text-2xl md:text-3xl mb-12 font-light max-w-2xl mx-auto">
             {t('subtitle')}

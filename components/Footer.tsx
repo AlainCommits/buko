@@ -16,7 +16,10 @@ export default function Footer() {
           {/* Branding und Kontakt */}
           <div className="md:col-span-4">
             <div className="mb-6">
-              <span className="font-bebas text-3xl tracking-wider text-white">
+              <span 
+                className="text-3xl tracking-wider text-white"
+                style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+              >
                 <span className="text-combat-red">BUKO</span> COMBAT
               </span>
             </div>
@@ -40,7 +43,12 @@ export default function Footer() {
 
           {/* Schnelllinks */}
           <div className="md:col-span-2">
-            <h3 className="font-bebas text-2xl mb-6 text-white">Links</h3>
+            <h3 
+              className="text-2xl mb-6 text-white"
+              style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+            >
+              Links
+            </h3>
             <ul className="space-y-3">
               <li><Link href="/" className="text-gray-400 hover:text-combat-red transition-colors">{nav('home')}</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-combat-red transition-colors">{nav('about')}</Link></li>
@@ -50,7 +58,12 @@ export default function Footer() {
           </div>
           
           <div className="md:col-span-2">
-            <h3 className="font-bebas text-2xl mb-6 text-white invisible md:visible">.</h3>
+            <h3 
+              className="text-2xl mb-6 text-white invisible md:visible"
+              style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+            >
+              .
+            </h3>
             <ul className="space-y-3">
               <li><Link href="/blog" className="text-gray-400 hover:text-combat-red transition-colors">{nav('blog')}</Link></li>
               <li><Link href="/videos" className="text-gray-400 hover:text-combat-red transition-colors">{nav('videos')}</Link></li>
@@ -61,7 +74,12 @@ export default function Footer() {
 
           {/* Kontakt */}
           <div className="md:col-span-4">
-            <h3 className="font-bebas text-2xl mb-6 text-white">{t('contactTitle')}</h3>
+            <h3 
+              className="text-2xl mb-6 text-white"
+              style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+            >
+              {t('contactTitle')}
+            </h3>
             <p className="mb-6 text-gray-400">
               {t('contactInfo')}
             </p>
@@ -88,7 +106,12 @@ export default function Footer() {
             
             {/* YouTube (falls vorhanden) */}
             <div>
-              <h3 className="font-bebas text-xl mb-4 text-white">{t('followTitle')}</h3>
+              <h3 
+                className="text-xl mb-4 text-white"
+                style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+              >
+                {t('followTitle')}
+              </h3>
               <div className="flex space-x-4">
                 <a href="https://youtube.com/bukocombat" target="_blank" rel="noopener noreferrer" 
                    className="w-10 h-10 bg-combat-gray rounded-sm flex items-center justify-center 

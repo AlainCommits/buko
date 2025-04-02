@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 const config: Config = {
   content: [
@@ -7,13 +8,14 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    colors: {
+      ...colors,
+      'combat-red': '#e01e1e',
+      'combat-red-dark': '#b31818',
+      'combat-black': '#1a1a1a',
+      'combat-gray': '#2c2c2c',
+    },
     extend: {
-      colors: {
-        'combat-red': '#e01e1e',
-        'combat-red-dark': '#b31818',
-        'combat-black': '#1a1a1a',
-        'combat-gray': '#2c2c2c',
-      },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'impact': ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],

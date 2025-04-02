@@ -48,7 +48,12 @@ export default function LatestBlogPosts() {
                 <Link href={`/blog/${post.slug}`}>
                   <div className="aspect-[16/9] bg-gradient-to-br from-combat-red/30 to-combat-black mb-4 overflow-hidden group-hover:from-combat-red/50 transition-colors">
                     <div className="w-full h-full flex items-center justify-center">
-                      <span className="text-4xl text-white/20 font-bebas">{post.category}</span>
+                      <span 
+                        className="text-4xl text-white/20"
+                        style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+                      >
+                        {post.category}
+                      </span>
                     </div>
                   </div>
                 </Link>
@@ -60,7 +65,10 @@ export default function LatestBlogPosts() {
                 </div>
                 
                 <Link href={`/blog/${post.slug}`}>
-                  <h3 className="text-2xl font-bebas mb-3 text-white group-hover:text-combat-red transition-colors">
+                  <h3 
+                    className="text-2xl mb-3 text-white group-hover:text-combat-red transition-colors"
+                    style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+                  >
                     {post.title}
                   </h3>
                 </Link>

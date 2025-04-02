@@ -41,7 +41,10 @@ export default function TrainingOptions() {
             <div key={option.key} className="combat-card">
               <div className="p-8">
                 {option.icon}
-                <h3 className="text-3xl font-bebas mb-4 text-white">
+                <h3 
+                  className="text-3xl mb-4 text-white"
+                  style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+                >
                   {training(`${option.key}.title`)}
                 </h3>
                 <p className="text-gray-300 mb-8 min-h-[80px]">

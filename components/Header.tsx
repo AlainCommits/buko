@@ -43,7 +43,10 @@ export default function Header() {
         <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className="font-bebas text-3xl tracking-wider text-white">
+            <span 
+              className="text-3xl tracking-wider text-white"
+              style={{ fontFamily: "'Anton', Impact, sans-serif" }}
+            >
               <span className="text-combat-red">BUKO</span> COMBAT
             </span>
           </Link>
