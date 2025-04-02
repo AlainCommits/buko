@@ -15,8 +15,8 @@ const config: Config = {
         'combat-gray': '#2c2c2c',
       },
       fontFamily: {
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
         'impact': ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],
-        'bebas': ['"Bebas Neue"', 'cursive'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

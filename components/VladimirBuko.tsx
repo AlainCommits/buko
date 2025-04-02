@@ -30,7 +30,7 @@ export default function VladimirBuko() {
                 />
               </div>
               <div className="absolute -bottom-5 -right-5 h-24 w-24 bg-combat-red flex items-center justify-center rounded-sm">
-                <div className="text-4xl text-white font-bebas">20+</div>
+                <div className="text-4xl text-white font-impact">20+</div>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function VladimirBuko() {
             </p>
             
             {/* Kampfstile - Korrigierte Icons */}
-            <h3 className="text-2xl font-bebas text-white mb-4">{training('disciplines.title')}</h3>
+            <h3 className="text-2xl font-impact text-white mb-4">{training('disciplines.title')}</h3>
             <div className="grid grid-cols-2 gap-6 mb-10">
               <div className="border-l-2 border-combat-red pl-4 flex items-center">
                 <GiBoxingGlove className="text-combat-red text-3xl mr-3" />

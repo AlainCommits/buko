@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Impact&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,7 +17,7 @@ body {
 
 @layer base {
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bebas tracking-wider;
+    @apply font-impact tracking-wider;
   }
 }
 
@@ -29,13 +29,13 @@ body {
 
 @layer components {
   .combat-button {
-    @apply bg-combat-red text-white font-bebas tracking-wider py-3 px-8 text-xl uppercase
+    @apply bg-combat-red text-white font-impact tracking-wider py-3 px-8 text-xl uppercase
            shadow-combat transition-all duration-300 rounded-sm
            hover:bg-combat-red-dark hover:shadow-combat-lg hover:translate-y-[-2px];
   }
   
   .combat-button-outline {
-    @apply border-2 border-white text-white font-bebas tracking-wider py-3 px-8 text-xl uppercase
+    @apply border-2 border-white text-white font-impact tracking-wider py-3 px-8 text-xl uppercase
            transition-all duration-300 rounded-sm
            hover:bg-white/10 hover:translate-y-[-2px];
   }
@@ -46,7 +46,7 @@ body {
   }
 
   .section-title {
-    @apply text-4xl md:text-5xl font-bebas text-center mb-12 relative
+    @apply text-4xl md:text-5xl font-impact text-center mb-12 relative
            after:content-[''] after:block after:w-24 after:h-1 after:bg-combat-red
            after:mx-auto after:mt-4;
   }

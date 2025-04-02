@@ -19,14 +19,17 @@ export default function Hero() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-combat-black to-transparent"></div>
+        <div className="absolute inset-0 flex items-center justify-center text-combat-red text-opacity-20 text-[20rem] font-impact font-bold tracking-wider -rotate-12 opacity-30">
+          BUKO
+        </div>
       </div>
 
       {/* Hero Content */}
       <div className="relative z-10 container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-6xl md:text-8xl mb-6 font-bebas tracking-wider">
+          <h1 className="text-6xl md:text-8xl mb-6 font-impact tracking-wider">
             <span className="gradient-text">BUKO</span> COMBAT SCHOOL
           </h1>
           

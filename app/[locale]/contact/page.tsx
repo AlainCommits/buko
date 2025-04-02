@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaPhone, FaWhatsapp } from 'react-icons/fa'
 
 export default function ContactPage() {
   const t = useTranslations('contact')
@@ -59,74 +59,60 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bebas text-white mb-2">{t('phone')}</h3>
-                    <p className="text-gray-300">+49 123 456789</p>
+                    <p className="text-gray-300">+49 176 61890226</p>
+                    <a href="tel:+4917661890226" className="text-combat-red hover:underline">
+                      {t('callNow')}
+                    </a>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
                   <div className="bg-combat-red p-3 rounded-sm mr-4">
-                    <FaEnvelope className="text-white text-2xl" />
+                    <FaWhatsapp className="text-white text-2xl" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bebas text-white mb-2">{t('email')}</h3>
-                    <p className="text-gray-300">info@buko-combat.de</p>
+                    <h3 className="text-xl font-bebas text-white mb-2">WhatsApp</h3>
+                    <p className="text-gray-300">+49 176 61890226</p>
+                    <a href="https://wa.me/4917661890226" target="_blank" rel="noopener noreferrer" className="text-combat-red hover:underline">
+                      {t('messageOnWhatsApp')}
+                    </a>
                   </div>
                 </div>
               </div>
+              
+              <div className="mt-8 p-4 bg-combat-black border-l-2 border-combat-red">
+                <p className="text-white">{t('contactNote')}</p>
+              </div>
             </div>
             
-            {/* Contact Form */}
+            {/* Training Location */}
             <div className="md:w-2/3">
-              <h2 className="text-3xl font-bebas text-white mb-8">{t('contactForm')}</h2>
+              <h2 className="text-3xl font-bebas text-white mb-8">{t('trainingLocation')}</h2>
               
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block text-white mb-2">{t('name')}</label>
-                    <input 
-                      type="text" 
-                      id="name" 
-                      className="w-full bg-combat-black border border-gray-700 p-3 text-white focus:outline-none focus:ring-2 focus:ring-combat-red rounded-sm"
-                      placeholder={t('namePlaceholder')}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-white mb-2">{t('email')}</label>
-                    <input 
-                      type="email" 
-                      id="email" 
-                      className="w-full bg-combat-black border border-gray-700 p-3 text-white focus:outline-none focus:ring-2 focus:ring-combat-red rounded-sm"
-                      placeholder={t('emailPlaceholder')}
-                    />
-                  </div>
+              <div className="aspect-[16/9] bg-combat-black mb-6">
+                <div className="w-full h-full flex items-center justify-center text-white/20 text-3xl font-bebas">
+                  PUNCH FITNESS ESSEN
                 </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-white mb-2">{t('subject')}</label>
-                  <input 
-                    type="text" 
-                    id="subject" 
-                    className="w-full bg-combat-black border border-gray-700 p-3 text-white focus:outline-none focus:ring-2 focus:ring-combat-red rounded-sm"
-                    placeholder={t('subjectPlaceholder')}
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-white mb-2">{t('message')}</label>
-                  <textarea 
-                    id="message" 
-                    rows={6}
-                    className="w-full bg-combat-black border border-gray-700 p-3 text-white focus:outline-none focus:ring-2 focus:ring-combat-red rounded-sm"
-                    placeholder={t('messagePlaceholder')}
-                  ></textarea>
-                </div>
-                
-                <div>
-                  <button type="submit" className="combat-button w-full md:w-auto">
-                    {t('sendButton')}
-                  </button>
-                </div>
-              </form>
+              </div>
+              
+              <div className="bg-combat-black p-6 border-l-4 border-combat-red">
+                <h3 className="text-xl font-bebas text-white mb-4">Punch Fitness Essen GmbH</h3>
+                <p className="text-gray-300 mb-4">
+                  Leimkugelstrasse 9<br />
+                  45141 Essen
+                </p>
+                <a 
+                  href="https://www.punch-fitness.de/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-combat-red hover:underline flex items-center"
+                >
+                  www.punch-fitness.de
+                  <svg className="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

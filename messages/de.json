@@ -71,7 +71,11 @@
   },
   "footer": {
     "rights": "© {year} Buko Combat School. Alle Rechte vorbehalten.",
-    "subscribe": "Abonnieren"
+    "subscribe": "Abonnieren",
+    "description": "Die ultimative Schule für effektive Selbstverteidigung und Kampfkunst, unter der Leitung des renommierten Trainers Vladimir Buko.",
+    "contactTitle": "Kontakt",
+    "contactInfo": "Vladimir Buko ist telefonisch und über WhatsApp erreichbar. Rufen Sie an oder senden Sie eine WhatsApp-Nachricht für Anfragen zu Training, Seminaren oder Privatstunden.",
+    "followTitle": "Soziale Medien"
   },
   "about": {
     "title": "Über Vladimir Buko",
@@ -129,20 +133,15 @@
   },
   "contact": {
     "title": "Kontakt",
-    "subtitle": "Haben Sie Fragen? Kontaktieren Sie uns und wir helfen Ihnen gerne weiter.",
+    "subtitle": "Haben Sie Fragen? Kontaktieren Sie Vladimir Buko direkt per Telefon oder WhatsApp.",
     "contactInfo": "Kontaktinformationen",
-    "address": "Adresse",
+    "address": "Trainingsort",
     "phone": "Telefon",
     "email": "E-Mail",
-    "contactForm": "Kontaktformular",
-    "name": "Name",
-    "namePlaceholder": "Ihr Name",
-    "emailPlaceholder": "Ihre E-Mail-Adresse",
-    "subject": "Betreff",
-    "subjectPlaceholder": "Betreff Ihrer Nachricht",
-    "message": "Nachricht",
-    "messagePlaceholder": "Ihre Nachricht...",
-    "sendButton": "Nachricht senden",
+    "callNow": "Jetzt anrufen",
+    "messageOnWhatsApp": "Nachricht über WhatsApp senden",
+    "contactNote": "Vladimir Buko ist aktuell nur telefonisch und über WhatsApp erreichbar. Bitte kontaktieren Sie ihn direkt für Anfragen zu Training, Preisen und Terminen.",
+    "trainingLocation": "Trainingsort",
     "findUs": "So finden Sie uns"
   }
 }
