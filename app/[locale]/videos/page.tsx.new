@@ -1,0 +1,24 @@
+// Temporär deaktiviert für den Build
+
+export default function VideosPage() {
+  // Prüfen, ob wir auf Vercel bauen
+  const isVercelBuild = process.env.NEXT_PUBLIC_VERCEL_BUILD === 'true';
+
+  // Wenn wir auf Vercel bauen, zeigen wir eine Nachricht an
+  if (isVercelBuild) {
+    return (
+      <div className="container mx-auto px-6 py-20">
+        <h1 className="text-4xl font-bold mb-8">Videos</h1>
+        <p>Diese Seite ist temporär deaktiviert.</p>
+      </div>
+    )
+  }
+
+  // Hier würde der normale Videos-Code stehen, der nur lokal ausgeführt wird
+  return (
+    <div className="container mx-auto px-6 py-20">
+      <h1 className="text-4xl font-bold mb-8">Videos</h1>
+      <p>Diese Seite ist temporär deaktiviert.</p>
+    </div>
+  )
+}
