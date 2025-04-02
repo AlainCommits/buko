@@ -12,8 +12,10 @@ export const localeNames: Record<Locale, string> = {
 };
 
 // Wichtig: next-intl erwartet diesen default export
-export default getRequestConfig(async ({ locale }) => {
+export default getRequestConfig(async ({ requestLocale }) => {
+  const locale = (await requestLocale) || defaultLocale;
   return {
+    locale,
     messages: (await import(`./messages/${locale}.json`)).default,
     timeZone: 'Europe/Berlin'
   };

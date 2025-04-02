@@ -19,6 +19,7 @@ const config: Config = {
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
         'impact': ['Impact', 'Haettenschweiler', 'Arial Narrow Bold', 'sans-serif'],
+        'bebas': ['Anton', 'Impact', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

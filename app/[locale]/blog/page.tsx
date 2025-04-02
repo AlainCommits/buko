@@ -1,32 +1,21 @@
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
-import { Link } from '@/navigation'
 
-// Beispielhafte Blog-Daten (später durch CMS oder API ersetzen)
-const getBlogPosts = (locale: string) => {
-  return [
-    {
-      id: 1,
-      slug: 'effektive-selbstverteidigung-im-alltag',
-      title: locale === 'de' ? 'Effektive Selbstverteidigung im Alltag' : 
-             locale === 'ru' ? 'Эффективная самооборона в повседневной жизни' : 
-             'Effective Self-Defense in Everyday Life',
-      excerpt: locale === 'de' ? 'Lernen Sie, wie Sie sich in alltäglichen Situationen effektiv verteidigen können...' : 
-               locale === 'ru' ? 'Узнайте, как эффективно защитить себя в повседневных ситуациях...' :
-               'Learn how to effectively defend yourself in everyday situations...',
-      date: '2023-11-15',
-      image: '/images/blog/self-defense.jpg',
-      category: locale === 'de' ? 'Selbstverteidigung' :
-                locale === 'ru' ? 'Самооборона' :
-                'Self-Defense'
-    },
+// Temporär deaktiviert für den Build
+export default function BlogPage() {
+  return (
+    <div className="container mx-auto px-6 py-20">
+      <h1 className="text-4xl font-bold mb-8">Blog</h1>
+      <p>Diese Seite ist temporär deaktiviert.</p>
+    </div>
+  )
+}
     {
       id: 2,
       slug: 'die-philosophie-hinter-buko-combat',
-      title: locale === 'de' ? 'Die Philosophie hinter Buko Combat' : 
-             locale === 'ru' ? 'Философия Буко Комбат' : 
+      title: locale === 'de' ? 'Die Philosophie hinter Buko Combat' :
+             locale === 'ru' ? 'Философия Буко Комбат' :
              'The Philosophy Behind Buko Combat',
-      excerpt: locale === 'de' ? 'Vladimir Buko erklärt die Prinzipien und die Philosophie seines Kampfsystems...' : 
+      excerpt: locale === 'de' ? 'Vladimir Buko erklärt die Prinzipien und die Philosophie seines Kampfsystems...' :
                locale === 'ru' ? 'Владимир Буко объясняет принципы и философию своей боевой системы...' :
                'Vladimir Buko explains the principles and philosophy of his combat system...',
       date: '2023-11-01',
@@ -38,10 +27,10 @@ const getBlogPosts = (locale: string) => {
     {
       id: 3,
       slug: 'trainingsplan-fuer-anfaenger',
-      title: locale === 'de' ? 'Trainingsplan für Anfänger' : 
-             locale === 'ru' ? 'Тренировочный план для начинающих' : 
+      title: locale === 'de' ? 'Trainingsplan für Anfänger' :
+             locale === 'ru' ? 'Тренировочный план для начинающих' :
              'Training Plan for Beginners',
-      excerpt: locale === 'de' ? 'Ein kompletter Trainingsplan für Anfänger, die mit Buko Combat beginnen möchten...' : 
+      excerpt: locale === 'de' ? 'Ein kompletter Trainingsplan für Anfänger, die mit Buko Combat beginnen möchten...' :
                locale === 'ru' ? 'Полный план тренировок для начинающих, которые хотят начать заниматься Буко Комбат...' :
                'A complete training plan for beginners who want to start with Buko Combat...',
       date: '2023-10-20',
@@ -53,10 +42,10 @@ const getBlogPosts = (locale: string) => {
     {
       id: 4,
       slug: 'interview-mit-vladimir-buko',
-      title: locale === 'de' ? 'Interview mit Vladimir Buko' : 
-             locale === 'ru' ? 'Интервью с Владимиром Буко' : 
+      title: locale === 'de' ? 'Interview mit Vladimir Buko' :
+             locale === 'ru' ? 'Интервью с Владимиром Буко' :
              'Interview with Vladimir Buko',
-      excerpt: locale === 'de' ? 'Ein exklusives Interview mit dem Gründer der Buko Combat School...' : 
+      excerpt: locale === 'de' ? 'Ein exklusives Interview mit dem Gründer der Buko Combat School...' :
                locale === 'ru' ? 'Эксклюзивное интервью с основателем Школы Буко Комбат...' :
                'An exclusive interview with the founder of the Buko Combat School...',
       date: '2023-10-10',
@@ -71,15 +60,15 @@ const getBlogPosts = (locale: string) => {
 export default function BlogPage({ params }: { params: { locale: string } }) {
   const t = useTranslations('blog')
   const posts = getBlogPosts(params.locale);
-  
+
   return (
     <>
       <div className="h-24"></div>
-      
+
       {/* Hero Section */}
       <section className="relative py-20 bg-combat-black">
         <div className="absolute inset-0 z-0 opacity-20">
-          <Image 
+          <Image
             src="/images/bg.jpg"
             alt="Blog Background"
             fill
@@ -96,7 +85,7 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
           </div>
         </div>
       </section>
-      
+
       {/* Blog Posts */}
       <section className="py-16 bg-combat-gray">
         <div className="container mx-auto px-6">
@@ -111,22 +100,22 @@ export default function BlogPage({ params }: { params: { locale: string } }) {
                       </div>
                     </div>
                   </Link>
-                  
+
                   <div className="mb-3 flex items-center space-x-4 text-sm">
                     <span className="text-combat-red font-medium">{post.category}</span>
                     <span className="w-1 h-1 bg-gray-500 rounded-full"></span>
                     <time className="text-gray-400">{new Date(post.date).toLocaleDateString(params.locale)}</time>
                   </div>
-                  
+
                   <Link href={`/blog/${post.slug}`}>
                     <h3 className="text-2xl font-bebas mb-3 text-white group-hover:text-combat-red transition-colors">
                       {post.title}
                     </h3>
                   </Link>
-                  
+
                   <p className="text-gray-400 mb-6 line-clamp-3">{post.excerpt}</p>
-                  
-                  <Link 
+
+                  <Link
                     href={`/blog/${post.slug}`}
                     className="text-combat-red font-medium hover:underline flex items-center"
                   >

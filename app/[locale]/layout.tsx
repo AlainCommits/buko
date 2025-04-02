@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
-import { unstable_setRequestLocale } from 'next-intl/server'
+import { setRequestLocale } from 'next-intl/server'
 import { locales, Locale } from '@/i18n'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -25,8 +25,8 @@ export default async function LocaleLayout({
   }
 
   // Wichtig: Server-Komponenten müssen die Locale kennen
-  unstable_setRequestLocale(locale as Locale)
-  
+  setRequestLocale(locale as Locale)
+
   // Lade die Übersetzungen für die aktuelle Sprache
   let messages;
   try {
