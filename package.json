@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "pnpm install --no-frozen-lockfile || echo 'Lockfile update not required'"
   },
   "dependencies": {
     "react": "^19.0.0",
