@@ -1,7 +1,8 @@
-import { useTranslations } from 'next-intl'
-import Image from 'next/image'
-import { useState } from 'react'
-import { FaPlay } from 'react-icons/fa'
+import { useTranslations } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
+import Image from 'next/image';
+import { useState } from 'react';
+import { FaPlay } from 'react-icons/fa';
 
 // Beispielhafte Video-Daten
 const getVideos = (locale: string) => {
@@ -76,8 +77,10 @@ const getVideos = (locale: string) => {
 };
 
 export default function VideosPage({ params }: { params: { locale: string } }) {
-  const t = useTranslations('videos')
-  const videos = getVideos(params.locale);
+  const locale = params.locale;
+  setRequestLocale(locale);
+  const t = useTranslations('VideosPage');
+  const videos = getVideos(locale);
   
   return (
     <>

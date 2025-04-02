@@ -1,15 +1,14 @@
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from './i18n';
  
 export default createMiddleware({
   // Eine Liste mit allen unterstützten Sprachen
-  locales,
+  locales: ['de', 'ru', 'en'],
   
   // Standard-Sprache
-  defaultLocale,
+  defaultLocale: 'de',
 
-  // Lokalisierungsstrategie (immer Sprachcode anzeigen für bessere Konsistenz)
-  localePrefix: 'always',
+  // Lokalisierungsstrategie
+  localePrefix: 'as-needed',
 });
  
 export const config = {
