@@ -1,10 +1,11 @@
 import { Inter } from 'next/font/google'
 import { notFound } from 'next/navigation'
 import { NextIntlClientProvider } from 'next-intl'
-import { setRequestLocale } from 'next-intl/server'
+import { unstable_setRequestLocale } from 'next-intl/server'
 import { locales, Locale } from '@/i18n'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import NoScriptFallback from '@/components/NoScriptFallback'
 
 const inter = Inter({ subsets: ['latin', 'cyrillic'], variable: '--font-inter' })
 
@@ -25,8 +26,8 @@ export default async function LocaleLayout({
   }
 
   // Wichtig: Server-Komponenten müssen die Locale kennen
-  setRequestLocale(locale as Locale)
-
+  unstable_setRequestLocale(locale as Locale)
+  
   // Lade die Übersetzungen für die aktuelle Sprache
   let messages;
   try {
@@ -37,7 +38,11 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans`}>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+      </head>
+      <body className={inter.className}>
+        <NoScriptFallback />
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main>{children}</main>

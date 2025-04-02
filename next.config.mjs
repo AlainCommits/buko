@@ -1,29 +1,23 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin('./i18n.ts');
+const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Temporär deaktivieren der problematischen Seiten für den Build
-  async redirects() {
-    return [
-      {
-        source: '/:locale/blog',
-        destination: '/:locale',
-        permanent: false,
-      },
-      {
-        source: '/:locale/blog/:slug',
-        destination: '/:locale',
-        permanent: false,
-      },
-      {
-        source: '/:locale/videos',
-        destination: '/:locale',
-        permanent: false,
-      }
-    ];
-  }
+  // Optimize build for faster deployment
+  swcMinify: true,
+  
+  // Improve performance with memory optimization
+  experimental: {
+    optimizeCss: true,
+  },
+  
+  // Handle images properly
+  images: {
+    domains: [],
+    remotePatterns: [],
+    unoptimized: process.env.NODE_ENV === 'development',
+  },
 };
 
 export default withNextIntl(nextConfig);
