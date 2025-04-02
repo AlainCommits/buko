@@ -1,12 +1,27 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
-import Image from 'next/image'
 import { Link } from '@/navigation'
 import { useParams } from 'next/navigation'
 
+// Define types for blog posts
+type BlogPostPreview = {
+  id: number;
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  category: string;
+}
+
+type BlogPosts = {
+  de: BlogPostPreview[];
+  en: BlogPostPreview[];
+  ru: BlogPostPreview[];
+}
+
 // Beispielhafte Blog-Daten als clientseitige Daten
-const blogPosts = {
+const blogPosts: BlogPosts = {
   de: [
     {
       id: 1,
@@ -115,7 +130,7 @@ export default function BlogPage() {
   const t = useTranslations('blog');
   const params = useParams();
   const locale = (params.locale as string) || 'de';
-  const posts = blogPosts[locale as keyof typeof blogPosts] || blogPosts.de;
+  const posts = blogPosts[locale as keyof BlogPosts] || blogPosts.de;
   
   return (
     <>

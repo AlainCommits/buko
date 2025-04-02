@@ -77,4 +77,31 @@ h1, h2, h3, h4, h5, h6 {
     background-clip: text;
     color: transparent;
   }
+
+  /* Add prose styling for blog content */
+  .prose {
+    @apply text-gray-300;
+  }
+  
+  .prose h3 {
+    @apply text-2xl text-white mt-8 mb-4;
+    font-family: 'Anton', Impact, sans-serif;
+  }
+  
+  .prose h4 {
+    @apply text-xl text-white mt-6 mb-3;
+    font-family: 'Anton', Impact, sans-serif;
+  }
+  
+  .prose p {
+    @apply mb-4;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-6 mb-4;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
 }

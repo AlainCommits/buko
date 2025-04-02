@@ -69,6 +69,17 @@
       "description": "Vladimir is available for seminars at police departments, military facilities, other public institutions, and corporate events."
     }
   },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Read our latest articles about martial arts, self-defense, and training.",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "featuredImage": "Featured Image",
+    "authorBio": "Vladimir Buko is an experienced martial arts master and founder of the Buko Combat School. With over 20 years of experience, he shares his knowledge about martial arts and self-defense.",
+    "recommendedPosts": "Recommended Posts",
+    "morePosts": "Explore more articles in our blog",
+    "viewAllPosts": "View All Posts"
+  },
   "footer": {
     "rights": "© {year} Buko Combat School. All rights reserved.",
     "subscribe": "Subscribe",
